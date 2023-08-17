@@ -3,6 +3,7 @@
   background-color: #fff;
   font-family: 'Lora', serif;
   font-size: 14px;
+  min-height: 100vh
 }
 
 .article-clean .intro {
