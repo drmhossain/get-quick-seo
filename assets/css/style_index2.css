@@ -1,0 +1,203 @@
+*, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+html, body{
+/* font-family: "Roboto","Heebo",Arial,sans-serif; */
+font-family:  Sans,Roboto-medium,arial,sans-serif-medium,sans-serif;
+font-size: 14px;
+    line-height: 20px;
+    font-size: 14px;
+    letter-spacing: 0.3em;
+    }
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    "header header"
+    "lt_col rt_col"
+    "footer footer";
+  background-color: rgb(89, 90, 89);
+  min-height: 100vh;
+  grid-gap: 1px;
+}
+
+.header {
+  display: flex;
+  /* flex:1 1 0; */
+  grid-area: header;
+  /* flex-flow: row; */
+  align-items: center;
+  /* justify-content:space-around; */
+  /* min-width: 100vw; */
+  justify-content: center;
+  height: 100px;
+  /* background-color: green; */
+  background-image: linear-gradient(
+    to bottom,
+    rgb(31, 30, 30),
+    rgb(56, 56, 53),
+    rgb(94, 94, 93)
+  );
+  color: Yellow;
+  /* border:solid 14px magenta; */
+}
+  .header > *{
+    flex: 1 1 0;
+  }
+  .logo{
+    display: flex;
+    /* align-items: flex-start; */
+    justify-content: left;
+  align-items: center;
+    /* justify-self: left; */
+   padding-left: 10px;
+   padding-top: 25px;
+/* border: solid 12px red; */
+    }
+
+    .rt_header{
+      display: flex;
+      /* align-items: center; */
+      justify-content: right;
+     padding-right: 10px;
+    }
+  .nav {
+    display: flex;
+    flex-flow: row;
+    /* justify-content: space-evenly; */
+    /* align-items: center; */
+    color: white;
+    /* border:solid 2px red; */
+    /* margin-left: 400px; */
+    /* font-style: normal; */
+    
+  }
+  .nav a{
+    /* display: flex;
+    flex-flow: row; */
+    color: rgb(255, 255, 255);
+    padding-left: 25px;
+    text-decoration: none;
+    /* font-family: "Roboto"; */
+    font-size: 1.2em;
+  }
+
+h3 {
+  text-align: center;
+  background-color: yellow;
+  color: gray;
+}
+.lt_col {
+  grid-area: lt_col;
+  background-color: yellow;
+  border-right: 1px solid grey;
+}
+.rt_col {
+  display: grid;
+  grid-area: rt_col;
+  background-color: hsla(126, 7%, 28%, 0.47);
+  /* for horizontal center  */
+  justify-items: center;
+  /*for vertical center  */
+  align-items: center;
+}
+.footer {
+  grid-area: footer;
+}
+
+/* FOR GRID CHILD ITEM */
+.getseo_logo {
+  display: grid;
+  
+  /* for horizontal center  */
+  justify-items: center;
+  /*for vertical center  */
+  align-items: center;
+  
+  /* height: 200px; */
+  /* width: 250px; */
+  background-color: hsla(300, 16%, 40%, 0.47);
+  /* color: rgb(233, 76, 197); */
+}
+.getseo_logo> p{
+  /* color: wheat; */
+  font-weight: bold;
+  font-size: 12px;
+  color:yellow;
+}
+
+.getseo_logo_slogan{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  /* background-color: hsl(126, 7%, 28%); */
+  color: rgb(37, 39, 35);
+
+}
+.getseo_logo_slogan1> p {
+font-size: 16px;
+color: rgb(210, 202, 209);
+}
+.getseo_logo_slogan2{
+  /* background-color: rgb(125, 69, 78); */
+  background-color: rgb(84, 102, 89);
+  border: solid rgba(204, 208, 185, 0.40) 0.5px;
+  box-shadow: 0px 0px 18px grey;
+  margin-top: 30px;
+  padding-bottom: 50px;
+}
+.getseo_logo_slogan2> p:nth-child(1){
+  margin-top: 0;
+  padding: 20px;
+  text-justify: distribute;
+  font-weight: bold;
+  font-size: 20px;
+  color: rgb(237, 227, 227);
+
+}
+.span_getseo{
+  background-color:rgb(20, 5, 170);
+  color: white;
+  padding:5px;
+}
+
+.getseo_logo_slogan2> p:nth-child(2){
+margin-inline-start: 0px;
+  text-justify: distribute;
+  /* font-weight: 100; */
+  font-size: 20px;
+  line-height: 1;
+  color: rgba(204, 208, 185, 0.76);
+  border: solid rgba(204, 208, 185, 0.40) 0.5px;
+  margin:0px 100px;
+  padding: 30px;
+
+}
+.span_rank{
+  /* color: rgb(20, 5, 170); */
+  color: rgb(255, 38, 0);
+    text-shadow: 1px 1px rgb(58, 54, 105);
+}
+
+/* FOR FLEX CHILD ITEM */
+.grid_item2 {
+  display: flex;
+
+  /*for vertical center  */
+  align-items: center;
+  /* for horizontal center  */
+  justify-content: center;
+
+  height: 200px;
+  width: 200px;
+  background-color: hsla(141, 16%, 42%, 0.462);
+  color: rgb(255, 242, 0);
+}
+P {
+  margin: 0;
+  /* padding:0; */
+  line-height: 2;
+  /* white-space: nowrap; */
+  text-align: center;
+}
