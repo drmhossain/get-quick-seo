@@ -141,7 +141,8 @@ color: rgb(210, 202, 209);
 }
 .getseo_logo_slogan2{
   /* background-color: rgb(125, 69, 78); */
-  background-color: rgb(84, 102, 89);
+background-color: hsla(126, 7%, 28%, 0.47);
+   /*  background-color: rgb(84, 102, 89);*/
   border: solid rgba(204, 208, 185, 0.40) 0.5px;
   box-shadow: 0px 0px 18px grey;
   margin-top: 30px;
