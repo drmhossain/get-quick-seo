@@ -1,2 +1,2 @@
-# 2mesoft
-website for Milan's 2mesoft
+# getSEO
+website for SEO Service
